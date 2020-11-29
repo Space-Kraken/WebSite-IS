@@ -11,7 +11,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="./assets/styles/navbar.css">
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/navbar.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/contactForm.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/map.css"
+    />
     <title>IS page</title>
   </head>
   <body>
