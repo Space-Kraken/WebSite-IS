@@ -23,6 +23,9 @@
         rel="stylesheet"
         href="./assets/styles/map.css"
     />
+    <link 
+        rel="stylesheet"
+        href="/assets/styles/jumbotron.css" />
     <title>IS page</title>
   </head>
   <body>
@@ -30,20 +33,20 @@
     <div id="nav">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">GUI-NTELLIGENCE</a>
+                <a class="navbar-brand" href="./main.php">GUI-NTELLIGENCE</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="material-icons">menu</span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="./main.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="./contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
