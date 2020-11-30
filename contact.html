@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootswach -->
+    <link href="./assets/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material UI - Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/navbar.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/contactForm.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="./assets/styles/map.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="/assets/styles/jumbotron.css" />
+    <title>IS page</title>
+  </head>
+  <body>
+      <!-- INICIO NAVBAR -->
+    <header>
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GUI-NTELLIGENCE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!-- FIN NAVBAR -->
+    <!-- INICIO FORMULARIO -->
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="card col-md-7 mt-5">
+                <article class="card-body">
+                    <h1 class="card-title mb-1 mt-1 text-center">Give us your information so we can stay in contact</h1>
+                    <form method="POST" action="procesoLogin.php">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="User name">
+                            <small id="nameHelp" class="form-text text-muted">You can skip this but it would be useful to us.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="password" class="form-control" placeholder="Enter your e-mail">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Ask us your questions</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <legend>You're seeking information for:</legend>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="r1" name="choose" class="custom-control-input" checked="">
+                                    <label class="custom-control-label" for="r1">Ask about our services</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="r2" name="choose" class="custom-control-input">
+                                    <label class="custom-control-label" for="r2">Ask for job advisory</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="r3" name="choose" class="custom-control-input">
+                                    <label class="custom-control-label" for="r3">Ask for job</label>
+                                </div>
+                            </div>
+                            <legend>You're want to comunicate with:</legend>
+                            <select class="custom-select">
+                                <option selected="">Select one option</option>
+                                <option value="1">Commercial department</option>
+                                <option value="2">HR department</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" checked="">
+                                <label class="custom-control-label" >I have read and agree to the website <b>&copy; terms and conditions</b></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <a id="sub-btn" href="#" class="btn btn-primary btn-block">Submit</a>
+                        </div>
+                        <div class="row justify-content-end mt-3">
+                            <a href="#" class="btn btn-outline-danger">Cancel submit</a>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- FIN FORMULARIO -->
+    <!-- INICIO MAPA -->
+    <div class="container">
+        <div class="row d-flex mt-5 mb-0">
+            <div id="map-h1" class="col col-sm-6">
+                <h1>You can find us here</h1>
+                <i class="material-icons">room</i>
+            </div>
+            <div class="col col-sm-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d535.7207037546718!2d-100.82086446242691!3d20.519911603306532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba8b15651237%3A0xb9fd3190376c7681!2sBlvrd%20Adolfo%20L%C3%B3pez%20Mateos%20722-C%2C%20San%20Miguel%2C%2038068%20Celaya%2C%20Gto.!5e0!3m2!1ses!2smx!4v1606621547481!5m2!1ses!2smx" 
+                    width="100%" 
+                    height="250" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MAPA -->
+    <!-- INICIO FOOTER -->
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <i class="material-icons">bathtub</i>
+              <small class="d-block mb-3 text-muted">&copy; 2020-&infin;</small>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Cool stuff</a></li>
+                <li><a class="text-muted" href="#">Random feature</a></li>
+                <li><a class="text-muted" href="#">Team feature</a></li>
+                <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                <li><a class="text-muted" href="#">Another one</a></li>
+                <li><a class="text-muted" href="#">Last time</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Resource</a></li>
+                <li><a class="text-muted" href="#">Resource name</a></li>
+                <li><a class="text-muted" href="#">Another resource</a></li>
+                <li><a class="text-muted" href="#">Final resource</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Team</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+               <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- FIN FOOTER -->
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
